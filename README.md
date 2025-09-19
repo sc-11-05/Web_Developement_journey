@@ -1,2 +1,4 @@
 # Web_Developement_journey
 This contains all the things that i have learned while i was learning web developement
+
+The contents here are learned from Udemy "The Complete Full-Stack Web Development Bootcamp"
