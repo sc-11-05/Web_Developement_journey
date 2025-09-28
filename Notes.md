@@ -102,4 +102,30 @@ Syntax:
     
     ```./Notes.md ```: Used to search for file in current directory.
 
+# Introduction to CSS
 
+### Why do we need CSS?
+* Stands for **Cascading Style Sheet**.
+* Used for styling our html page.
+
+### How to add CSS?
+* Inline - Same line as html element.
+
+```<html style = "background:blue" ></html> ```
+* Internal - Use style tag and css code is written inside it.
+```
+<style>
+ body{
+    background: red;
+ }
+</style>
+```
+* External - An additional css file extension is created and linked to our html file.
+
+```
+<head>
+<link rel = "stylesheet" href = "styles.css">
+</head>
+ ``` 
+
+### CSS selectors
