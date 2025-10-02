@@ -129,3 +129,121 @@ Syntax:
  ``` 
 
 ### CSS selectors
+
+1) Element selector
+```
+h2{
+    color:red;
+}
+```
+
+2) Class selector
+```
+.red-heading{
+    color:red;
+}
+```
+
+3) Id selector
+```
+#nav{
+    color:red
+}
+```
+
+4) Attribute selector
+```
+p[draggable]{
+    color:red
+}
+```
+
+5) Universal selector
+```
+*{
+    color:red
+}
+```
+### CSS colors 
+
+1) Hex code - 000000(white) to ffffff(black)
+2) RGB - (0,0,0)(white) to (255,255,255)(black)
+3) RGBa - 'a' is for opacity
+4) HSL - Hue saturation lightness 
+5) HSLa - 'a' is for opacity
+
+### CSS fonts
+
+* Units
+    * 1px - 1/96th inch
+    * 1pt - 1/72nd inch  
+    * 1em - 100% of parent
+    * 1rem - 100% of root
+
+### CSS Box Model
+![Image](Box_model.png)
+
+### CSS Inheritance
+
+Position < Specifcity < Type < Importance 
+![image](Inheritance.png)
+
+### Combining CSS selectors
+1) Group 
+```
+selector, selector{
+    color: violet;
+}
+```
+
+2) Child 
+```
+selector > selector {
+    color: red;
+}
+```
+3) Descendant
+```
+selector selector{
+    color: blue;
+}
+```
+
+4) Chaining
+```
+selectorselector{
+    color: green;
+}
+```
+5) Combining combiners
+```
+selector selectorselector{
+    font-size: 0.5rem;
+}
+```
+### CSS positioning
+1) Static : default position
+2) Relative : positioning relative to default position
+3) Absolute : positon relative to nearest positioned ancestor
+4) Fixed : Get fixed and doesn't move even if scrolled
+ 
+Note: Z-index is used to set the position of an element below or above other element
+
+### CSS display
+1) Inline: Takes only needeed.
+2) Block: Takes the whole width.
+3) Inline-block: Allow us to set width and height and also keep it in Inline.
+4) None: Disapper the element
+
+
+
+
+
+
+
+
+
+
+
+
+
