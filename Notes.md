@@ -235,6 +235,72 @@ Note: Z-index is used to set the position of an element below or above other ele
 3) Inline-block: Allow us to set width and height and also keep it in Inline.
 4) None: Disapper the element
 
+### CSS float
+Wrapping text using float and clear
+```
+img{
+    float: right;
+}
+```
+To clear the float from the footer type
+```
+footer{
+    float: clear;
+}
+```
+
+### How to create Responsive website?
+There are 4 ways:
+1) Media queries
+2) CSS grid
+3) CSS flexbox
+4) External frameworks eg: bootstrap
+
+### Media Queries
+
+Adding breakpoints to define responsive layouts
+```
+div{
+    background-color: red;
+    height:200px;
+    width:200px;
+}
+
+@media (max-width: 600px){
+    div{
+        height:100px;
+        wifth:100px
+    }
+}
+```
+
+max-width and min-width can be used to set the boundary.
+
+### CSS Flexbox
+```
+.container{
+    display: flex;
+    gap:10px;
+    flex-direction: row;
+    flex-basis: 100px;
+}
+```
+
+#### Flexible Layout
+Align, justify and wrap
+
+``` order: 0; ```: applied to elements inside a container to give them an order
+
+``` flex-wrap: wrap;```: wraps if there is no space horizontal
+
+```justify-content: flex-start```: set on parent container
+
+#### Flex Sizing
+Shrinking and growing
+
+content-width < Width < flex-basis < min-width/max-width 
+
+
 
 
 
