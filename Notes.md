@@ -301,8 +301,30 @@ Shrinking and growing
 content-width < Width < flex-basis < min-width/max-width 
 
 
+### CSS Grid
+* Good for 2D 
 
+```
+.container{
+    display : grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap:10px;
+}
+```
 
+### Grid Sizing
+* Fixed
+* Auto
+* Min-max
+* Fractions
+
+### Grid item Placement
+```.item1{
+        grid-column: span 2;
+        
+}
+```
 
 
 
