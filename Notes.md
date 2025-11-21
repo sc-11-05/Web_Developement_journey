@@ -320,17 +320,54 @@ content-width < Width < flex-basis < min-width/max-width
 * Fractions
 
 ### Grid item Placement
-```.item1{
+```
+.item1{
         grid-column: span 2;
-        
+        grid-row: span 2;
 }
 ```
+### Bootstrap / CSS framework
 
+* Has pre-made CSS tags and can be just copied to our project
 
+## Web Design
+* Important to attract people
+* Principles: Color theory, Typography, User interface, User Experience Design(UX)
 
+### Color Theory
+* RED - love, energy, intensity
+* YELLOW - joy, intellect, attention
+* GREEN - freshness, safety, growth
+* BLUE - stability, trust, serenity
+* PURPLE - royalty, wealthy, feminity
 
+<img src="Color_wheel.png">
+Different ways of selectign color
 
+1) Analogus Colors
+2) Complementary / Clashing Colors 
+3) Triadic Colors
 
+Websites: [colorhunt.co](https://colorhunt.co/)
+
+### Typography
+* Typography significantly influences the mood and professionalism of a design.
+* Serif fonts convey tradition, authority, and seriousness, inspired by historical marble carvings.
+* Sans-serif fonts are modern, friendly, and highly readable, often preferred for body text.
+* Combining two fonts with similar moods and contrasting serif styles enhances design clarity and appeal.
+
+### User Interface
+* Hierarchy in UI design guides users' attention by emphasizing important elements through size and color.
+* Effective layout breaks content into manageable sections, improving readability and user engagement.
+* Consistent alignment enhances the professional appearance and coherence of a design.
+* White space elevates design quality by creating a minimalist, luxurious feel.
+* Designing with the target audience in mind ensures the interface appeals appropriately and effectively.
+
+### User Experience (UX) design
+1) Simplicity
+2) Consistency
+3) Reading patterns
+4) All platform design
 
 
 
