@@ -369,6 +369,136 @@ Websites: [colorhunt.co](https://colorhunt.co/)
 3) Reading patterns
 4) All platform design
 
+# Introdcution to Javascript
 
+### Javascript Alerts
+```
+alert("Hello")
+```
 
+### Data Types
+1) String
+2) Numbers
+3) Boolean
 
+```
+typeof(123)
+typeof("hello")
+typeof(true)
+```
+
+### Variables
+```
+var myName = "Sujal";
+```
+### Naming Conventions
+1) Meaaningful names 
+2) Avoid keywords
+3) No leading numbers
+4) No spaces
+5) Allowed character: $ _ 
+6) Camel casing: myVariableName
+
+### String concatenation
+```
+"Hello " + "world";
+```
+### String length
+```
+var name = "Sujal";
+name.length;
+```
+
+### String Slicing
+```
+var name = "Sujal"
+name.slice(0,4)
+```
+
+### String uppercase and lowercase
+```
+char.toUpperCase();
+char.toLowerCase();
+```
+
+### Arithmetic and Modulo character
+```
+var a = 1+2
+var b = 2-3
+var c = 10/5
+var d = 3*3
+var e = 9%6
+```
+
+### Incrementation and Decrementation
+```
+x++ // x = x+1
+x-- // x = x-1
+```
+
+### Functions
+```
+function sum(){
+    return 2+4;
+}
+
+sum();
+
+function diff(a,b){
+    return a - b;
+}
+
+diff(4,2)
+```
+
+## Intermediate Javascript
+
+### Random function
+```
+var n = Math.random(); //  0 - 0.9999999...
+```
+
+### Control statements
+```
+if (age>18){
+    console.log("Eligible");
+}
+
+else{
+    console.log("Not Eligible");
+}
+```
+
+### Comparators and Equality
+```
+=== is equal to
+!== is not equal to
+> greater than
+< lesser than
+>= greater than or equal to
+<= lesser than or equal to
+```
+
+### Combining Comparators
+```
+&& And
+|| Or
+! Not
+```
+
+## DOM (Document Object Model)
+### Adding Javascript to websites
+1. Inline JS
+```
+<body onload = "alert('Hello')">
+```
+2. Internal JS
+```
+<script type="tetx/javascript">
+    alert("hello");
+</script>
+``` 
+3. External JS
+```
+<script src="index.js" charset="utf-8"></script>
+```

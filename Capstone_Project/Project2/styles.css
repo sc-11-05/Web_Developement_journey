@@ -4,71 +4,63 @@
 }
 
 body{
-    background-color: rgb(255, 248, 222);
-
+    background-color: rgb(243, 240, 202);
 }
 
-#nav-bar{
-    background-color: rgb(140, 169, 255);
-    height: 50px;
-    align-items: center;
+#nav-bar-container{
+    background-color: rgb(56, 118, 250);
+    height: 10%;
+    margin: 10px;
     border-radius: 50px;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
 }
 
-#nav-bar div ol{
-    position: relative;
-    padding-top: 15px;
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
+ul{
     list-style: none;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-a{
+ul li a{
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 2em;
+    transition: transform 0.35 ease;
+    display: inline-block;
 }
 
-#nav-bar div ol a li{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 24px;
-    color: rgb(69, 84, 147);
+
+ul li a:hover{
+    transform: scale(1.2);
 }
 
-
-footer{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 10px;
-    height: 50px;
-    background-color: rgb(140, 169, 255);
-    color:rgb(69, 84, 147);
-    border-radius: 50px;
-}
-
-#container{
-    margin-top: 10px;
+.container{
+    flex:1;
+    display:grid;
     height: 80vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    margin: 10px;
 }
- #container #aboutme{
-    border-radius: 50px;
-    background-color: rgb(140, 169, 255);
-    height: 75vh;
-    grid-column: span 1;
+
+#aboutme{
     grid-row: span 2;
-    display: flex;
-    padding-left: 20px;
-    justify-content: left;
-    align-items: center;
-    font-size: 36px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
- }
+    background-color: rgb(56, 118, 250);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+#aboutme h1{
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 2rem;
+}
+
+#aboutme p{
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 1.5rem;
+}
+
