@@ -502,3 +502,35 @@ else{
 ```
 <script src="index.js" charset="utf-8"></script>
 ```
+
+### Intro to DOM
+* The Document Object Model (DOM) represents a web page as a tree of objects that can be selected and manipulated.
+* Browsers convert HTML into the DOM tree structure when loading a web page.
+* JavaScript can interact with the DOM to dynamically change content and styles without reloading the page.
+* Objects in the DOM have properties (describing attributes) and methods (actions they can perform), accessible via dot notation.
+
+```
+document.firstElementChild; //selects the first child of html tag
+```
+
+### Selecting elements using DOM
+
+```
+document.getElementByTagName("ul"); // selects the ul tag
+
+document.getElementByClassName("container"); // selects the container class
+
+document.getElementById("image1") // selects the image1 tag
+
+document.querySelector("h1"); // helps to select wide range of tags, id and classes. Just like we do in CSS.
+```
+
+
+### Manipulating styles of HTML element
+```
+document.querySelector("h1").style.color = "red";
+
+document.querySelector("h1").style.fontSize = "10rem";
+
+document.querySelector("h1").style.padding = "30%"
+```
