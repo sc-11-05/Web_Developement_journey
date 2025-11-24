@@ -534,3 +534,55 @@ document.querySelector("h1").style.fontSize = "10rem";
 
 document.querySelector("h1").style.padding = "30%"
 ```
+
+```
+<button class="btn">click me</button>
+```
+
+Adding class to a list of classes of an element
+```
+document.querySelector("button").classList.add("invisible"); // added class invisible to the button
+```
+
+Removing class from a list of classes of an element
+```
+document.querySelector("button").classList.remove("invisible"); // removed class invisible from the button
+```
+
+Toggling if on then off else vice versa
+```
+document.querySelector("button").classList.toggle("invisible");
+```
+
+### Text manipulation and text content property
+```
+document.querySelector("h1").innerHTML="Good Bye"; // gives all the html inside the html tag
+
+document.querySelector("h1").textContent="Hello World"; //only selects the text content
+```
+
+### Manipulating HTML element attributes
+href, class, id , type etc are the attributes.
+
+```
+document.querySelector("a").attributes; //return all the attributes
+
+document.querySelector("a").getAttribute("href"); //gives the value of the attribute
+
+document.querySelector("a").setAttribute("href","https://www.google.com")
+```
+
+## Advance Javascript and DOM manipulation
+
+### Adding event listeners to button
+```
+document.querySelector("button").addEventListener("click", handleClick) //two parameter (eventType, Listener/Function)
+
+function handleClick(){
+    alert("I got Clicked!");
+}
+``` 
+
+### Higher order functions and passing functions
+
+`   
