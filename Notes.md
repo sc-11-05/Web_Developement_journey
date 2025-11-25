@@ -585,4 +585,75 @@ function handleClick(){
 
 ### Higher order functions and passing functions
 
-`   
+Higher order functions are functions which can take other functions as inputs.
+```
+function add(num1, num2){
+    return num1 + num2;
+}
+
+function multiply(num1, num2){
+    return num1 * num2;
+}
+
+function calculator(num1, num2, operator){
+    return operator(num1, num2);
+}
+
+calculator(4, 5, add)
+```
+
+```
+debugger; // can be used to look after every step for debugging an error
+calculator(3, 4, multiply);
+```
+
+### Switch statements
+```
+switch(expression){
+    case expression:
+        <body>
+        breaks;
+
+    default:
+}
+```
+
+### Javascript Objects
+```
+var houseKeeper1 = {
+    yearOfExperience: 12,
+    name: 'Jane',
+    cleaningReertoire: ['bathroom', 'lobby', 'bedroom']
+}
+```
+
+### Constructor Functions
+camelcase isn't used and the first letter is capitalized
+```
+function BellBoy(name, age, hasWorkPermit, languages){
+    this.name = name;
+    this.age = age;
+    this.hasWorkPermit = hasWorkPermit;
+    this.language = langauge;
+    function moveSuitcase(){
+        console.log("picked");
+    }
+}
+
+//initialize object
+var bellBoy1 = new BellBoy("Timmy", 19, true, ['French', 'English']);
+
+bellBoy1.moveSuitcase(); // using methods - calling methods here
+```
+
+### Callbacks and how to respond to events
+A callback function in JavaScript is a function that is passed as an argument to another function, and is intended to be executed at a later time, typically after the completion of some operation within the receiving function.
+```
+document.addEventListener("keypress",respondToKey(event));
+
+function respondTokey(event){
+    console.log("Key Pressed");
+}
+```
+
+## Jquery
