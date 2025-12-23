@@ -657,3 +657,101 @@ function respondTokey(event){
 ```
 
 ## Jquery
+Library which contains code that has been written by someone else and can be incorporated in our own code. Helps to write the code we want in smaller syntax.
+
+### How to incorporate the jquery
+1) Downlaoding the files
+2) Use googles CDN
+
+Selecting elements
+```
+$("h1");
+```
+Manipulating CSS
+```
+$("h1").css("color","green");
+
+$("h1").addClass("class1");
+
+$("h1").removeClass("class1);
+
+$("h1").hasClass("class1);
+
+```
+
+Manipulating Text
+```
+$("h1").text("Goodbye");
+
+$("button").html("<em>Hey</em>);
+```
+
+Manipulating attributes
+```
+$("img").attr("src","");
+```
+
+Adding event listener
+```
+$("h1").click(function(){
+    $("h1").css("color","purple");
+}
+);
+```
+
+Adding and removing Elements
+```
+$("h1").before("<button>New</button>");
+
+$("h1").after("<button>New</button>");
+
+$("h1").prepend("<button>New</button>");
+
+$("h1").append("<button>New</button>");
+```
+
+Animation
+```
+$("button").on("click",function(){
+    $("h1").hide();
+});
+
+$("button").on("click",function(){
+    $("h1").show();
+});
+
+$("button").on("click",function(){
+    $("h1").toggle();
+});
+
+$("button").on("click",function(){
+    $("h1").fadeOut();
+});
+
+$("button").on("click",function(){
+    $("h1").fadeIn();
+});
+
+$("button").on("click",function(){
+    $("h1").fadeToggle();
+});
+
+$("button").on("click",function(){
+    $("h1").slideUp();
+});
+
+$("button").on("click",function(){
+    $("h1").slideDown();
+});
+
+$("button").on("click",function(){
+    $("h1").slideToggle();
+});
+
+$("button").on("click",function(){
+    $("h1").animate({
+        opacity: 0.5
+    }); //allows to create custom css but stick to numeric value attributes
+});
+
+``` 
