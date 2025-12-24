@@ -755,3 +755,25 @@ $("button").on("click",function(){
 });
 
 ``` 
+
+### GIT BASH
+* The Shell in computing refers to the user interface that allows you, as a human, to interact with the Kernel and, in turn, with the hardware of your computer.
+* There are two variants of the shell:
+    1) Graphical User Interface (GUI) Shells: For example, when you open Finder, you are using a graphical user interface to access and find your files.
+    2) Command Line Interface (CLI): This is what we will be discussing and learning about in this module. It is an alternative way of interfacing with the Kernel.
+* BASH - Bourne Again Shell
+* Some commands
+    * cd : Used to change directory
+        * ```cd..``` to move back
+    * ls : List all directories and files
+    * mkrdir : To make a new directory
+    * touch : To create a file
+    * open : To open a file (automatically detects the application to be used)
+        * ```open -a <ApplicationName> Text2.txt``` We can also specify the application to be used 
+    * rm : To remove the file from the directory
+        * ```rm *``` to remove all the files from the directory
+        * ```rm -r <filename>``` will be used to remove the directory with all the files and subfolder inside it
+    * pwd : To check the name of current directory
+
+# Node JS
+
