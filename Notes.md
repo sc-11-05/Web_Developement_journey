@@ -777,3 +777,25 @@ $("button").on("click",function(){
 
 # Node JS
 
+### What is a framework?
+
+Pre-built components that can be used to create a application reducing overhead and components.
+
+Node js is not exactly a framework, it's an asynchronous event-driven **Javascript runtime**, Node js is designed to build scalable network applications. 
+
+Node REPL (Read Eval Print Loop) - Computer environment where user inputs are read and evaluated and the results are returned to the user.
+
+### What are Native Modules?
+Pre-bundled modules that can used by users for their own code.
+
+Example: 1) File System - allows to access Local storage. 
+```
+const fs = require("fs");
+
+fs.writeFile("message.txt","Hello world", (err)=>{
+    if err throw err;
+    console.log("The File has been saved");
+})
+```
+
+ECAscript Modules: Uses **import** keyword instead of **require** keyword. It's asynchronours so it's better. 

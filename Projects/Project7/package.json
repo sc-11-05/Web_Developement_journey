@@ -1,0 +1,17 @@
+{
+  "name": "qrgenerator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This is used to generate QR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SUjal",
+  "license": "ISC",
+  "dependencies": {
+    "20": "^3.1.9",
+    "inquirer": "^13.1.0",
+    "qr-image": "^3.2.0"
+  }
+}
