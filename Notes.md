@@ -798,4 +798,42 @@ fs.writeFile("message.txt","Hello world", (err)=>{
 })
 ```
 
-ECAscript Modules: Uses **import** keyword instead of **require** keyword. It's asynchronours so it's better. 
+ECAscript Modules: Uses **import** keyword instead of **require** keyword. It's asynchronours so it's better.
+
+# Express JS
+A framework that is developed on Node js. 
+
+Fun Fact: VS code was made using node js.
+
+Creating an Express server:
+
+Step1: Create a directory
+
+Step2: Create index.js file
+
+Step3: Initialise NPM
+
+Step4: Install the Express package
+
+Step5: Write Server application in index.js
+
+Step6: Start Server 
+```
+import express from "express"
+const app = express();
+const port = 3000
+app.listen(port, ()=>{
+    console.log(`Server running on port ${port}.`);
+});
+```
+
+### HTTP
+Request vocab
+
+1) GET: Requesting a resource from the server. 
+2) POST: Sending a resource to the server.
+3) PUT: Replace a resource with whatever you are sending.
+4) PATCH: Patch up the resource.
+5) DELETE: Deletes a resource from the server.
+
+**Nodemon**: A tool which automatically restarts the server if any changes is detected.
