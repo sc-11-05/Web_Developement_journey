@@ -102,6 +102,17 @@ Syntax:
     
     ```./Notes.md ```: Used to search for file in current directory.
 
+### HTML FORMS
+```
+<form action="\login" method="POST">
+    <label for="email">Email</label>
+    <input type="text" name="email" required>
+    <label for="password">Password</label>
+    <input type="text" name="password" required>
+    <input type="submit" value="Submit">
+</form>
+```
+
 # Introduction to CSS
 
 ### Why do we need CSS?
@@ -837,3 +848,35 @@ Request vocab
 5) DELETE: Deletes a resource from the server.
 
 **Nodemon**: A tool which automatically restarts the server if any changes is detected.
+
+### HTTP response status codes
+1) Informational responses (100-199)
+2) Successful responses (200-299)
+3) Redirection messages (300-399)
+4) Client error responses (400-499)
+5) Server error responses (500-599)
+
+### POSTMAN
+When developing APIs or back-end services, you might not have a front-end ready to test your HTTP requests. Postman is a popular tool that allows you to test GET, POST, PUT, PATCH, and DELETE requests easily.
+
+### Express Middlewares
+Middleware is a component that sits between the raw incoming requests and the route handlers. When a request arrives at the server, before it is processed by route handlers such as GET, POST, or PUT functions, middleware can operate on these requests before they reach their final destinations.
+
+Functions of Middleware
+Middleware can perform several functions before allowing the request to proceed:
+
+* **Pre-processing requests**: When a request might be handled by multiple handlers (GET, POST, PUT), middleware can modify aspects of the request or perform operations on it before routing.
+* **Logging**: Middleware can log details such as the time taken for the request, the request type (GET, PUT, POST, etc.), and the status of the request handling.
+* **Authentication**: Middleware can verify if the incoming request originates from an authorized client before allowing access to backend handlers.
+* **Error handling**: Middleware can identify and manage errors in requests before
+
+### HTML FORMS
+```
+<form action="\login" method="POST">
+    <label for="email">Email</label>
+    <input type="text" name="email" required>
+    <label for="password">Password</label>
+    <input type="text" name="password" required>
+    <input type="submit" value="Submit">
+</form>
+```
