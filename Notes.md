@@ -880,3 +880,26 @@ Middleware can perform several functions before allowing the request to proceed:
     <input type="submit" value="Submit">
 </form>
 ```
+
+Most commonly used middleware is **BODY PARSER**. It can look at request bodies before handlers could actually access them. Gives our request the body property and very commonlu used to handle forms.
+
+When trying to send a file using index.js file we use res.sendFile(). Now this file requires the full path so we need to use some packages to get the file path in the server. You may follow as below:
+
+Below will import the required packages
+```
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+```
+
+**Logging Middlewares**
+* Morgan : Log on the details about the handlers and many other parameters.
+
+### Custom Middlewares
+```
+app.use((req,res,next)=>{
+    console.log("Request method: ", req.method);
+    next(); // tells when to move on to the next function in line
+})
+```
+
