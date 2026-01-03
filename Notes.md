@@ -902,4 +902,7 @@ app.use((req,res,next)=>{
     next(); // tells when to move on to the next function in line
 })
 ```
+# Embbeded Javascript (EJS)
+EJS is like having a JavaScript module that can run JavaScript code inside an HTML file, using the .ejs file extension. It is essentially HTML with bits of JavaScript enclosed in special syntax.
 
+We might have used res.sendFile, but this is only for static files. Templates like EJS change because we insert data into them, so we cannot use res.send or res.sendFile. Instead, we use res.render, which allows us to specify the file to render and pass a JavaScript object with key/value pairs.
