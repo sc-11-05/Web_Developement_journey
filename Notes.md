@@ -906,3 +906,15 @@ app.use((req,res,next)=>{
 EJS is like having a JavaScript module that can run JavaScript code inside an HTML file, using the .ejs file extension. It is essentially HTML with bits of JavaScript enclosed in special syntax.
 
 We might have used res.sendFile, but this is only for static files. Templates like EJS change because we insert data into them, so we cannot use res.send or res.sendFile. Instead, we use res.render, which allows us to specify the file to render and pass a JavaScript object with key/value pairs.
+
+
+### EJS tags
+```
+<%= variable %>                             JS output
+<% console.log("hello") %>                  JS execute
+<%- <h1>Hello</h1> %>                       Render HTML
+<%% %%>                                     Show <% or %>
+<%# This is a comment %>                    Stop execution
+<%- include("<FILE_NAME>")%>                Add another EJs file
+```
+
