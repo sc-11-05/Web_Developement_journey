@@ -809,7 +809,7 @@ fs.writeFile("message.txt","Hello world", (err)=>{
 })
 ```
 
-ECAscript Modules: Uses **import** keyword instead of **require** keyword. It's asynchronours so it's better.
+ECMAscript Modules: Uses **import** keyword instead of **require** keyword. It's asynchronours so it's better.
 
 # Express JS
 A framework that is developed on Node js. 
@@ -918,3 +918,30 @@ We might have used res.sendFile, but this is only for static files. Templates li
 <%- include("<FILE_NAME>")%>                Add another EJs file
 ```
 
+### EJS partials and layouts
+We can't simply add style sheet to our EJS file. The **CSS** and images are static files and don't change dynamically. Whereas an EJS file is interpreted and renndered as an HTML file. 
+
+Hence we use "Public" folder to keep all the static file and a middleware to handle it
+
+```
+app.use(express.static("public"))
+```
+
+```
+public/
+├── styles/
+│   └── layout.css
+└── images/
+    └── img
+```
+Now this will allow us to normally add the styles in our website using the **link tag**.
+
+
+## Partials
+Using EJS to reduce the code 
+
+```
+<%- include("header.ejs") %>
+
+<%- include("footer.ejs") %>
+```
