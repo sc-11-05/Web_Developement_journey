@@ -945,3 +945,34 @@ Using EJS to reduce the code
 
 <%- include("footer.ejs") %>
 ```
+
+# Github
+
+### Initializing git
+Make sure to go to the directory which you want to make as repository and type following command
+```
+git init
+```
+**Working directory**: The current directory where you are working on. To check the following command can be used
+```
+pwd
+```
+
+**Staging Area**: To start tracking the changes of files we take them to staging area. Basically an intermediate space where we pick and choose files inside our working directory which we want to commit. Following commands can be used to check out the files and add them to staging area 
+```
+git status
+
+git add <filename> 
+(or)
+git add .  <!-- add everything>
+```
+
+Commiting in github
+```
+gitam commit -m <message>
+```
+
+We can rollback to previous last version whcih was committed by following command
+```
+git checkout <filename>
+```
