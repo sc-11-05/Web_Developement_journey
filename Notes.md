@@ -976,3 +976,34 @@ We can rollback to previous last version whcih was committed by following comman
 ```
 git checkout <filename>
 ```
+
+### Git remote Repositories
+
+To add remote repository we can use the following command
+```
+git remote add <name> <url>
+```
+
+To push the files
+```
+git push -u <remote name> <branch name>
+```
+
+### How to use .gitignore
+
+Choosing files which not to track such as APi keys, OS generated files
+
+```
+touch gitignore
+```
+
+Removing files from staging area
+```
+git rm --cached -r .
+```
+
+### Git cloning
+To store the remote files or folder into our own local environment.
+```
+git clone <url>
+```
