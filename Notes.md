@@ -1007,3 +1007,23 @@ To store the remote files or folder into our own local environment.
 ```
 git clone <url>
 ```
+
+### Branch and Merging
+To make branches: ``` git branch <name-of-branch>```
+
+To check all branches: ```git branch```
+
+Note: * indicates the current branch
+
+To switch to another branch: ``` git checkout <name-of-branch>```
+
+To merge branches with main: ```git merge <name-of-branch ```
+
+### Forking and Pull requests
+**Forking** : Copying the whole repository into your own github from different user account.
+
+**Pull Request**: Basically like making a suggestion
+
+# APIs (Application Programming Interface)
+
+Communication between two software to exchange data. 
